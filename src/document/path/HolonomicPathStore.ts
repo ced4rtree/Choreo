@@ -118,6 +118,9 @@ export const HolonomicPathStore = types
           }
         }
       },
+      fixWaypointHeadings() {
+        self.params.fixWaypointHeadings();
+      },
       addEventMarker(marker?: EventMarker): IEventMarkerStore {
         const m = marker ?? DEFAULT_EVENT_MARKER;
         const toAdd = getEnv<Env>(self).create.EventMarkerStore(m);

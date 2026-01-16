@@ -110,6 +110,9 @@ export const HolonomicWaypointStore = types
       },
       setSplit(split: boolean) {
         self.split = split;
+      },
+      fixWaypointHeadings() {
+        params.fixWaypointHeadings();      
       }
     };
   })

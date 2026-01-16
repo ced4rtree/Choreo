@@ -210,6 +210,7 @@ export const DocumentStore = types
       if (pathStore === undefined) {
         throw "Path store is undefined";
       }
+      pathStore.fixWaypointHeadings();
       const points = pathStore.params.waypoints;
       if (points.length < 2) {
         return;
